@@ -1,9 +1,11 @@
 html {
   font-family: 'Courier New', Courier, monospace;
 }
+
 body {
   margin: 30px;
 }
+
 header {
   margin: 5px;
   display: flex;
@@ -13,74 +15,83 @@ header {
   border: #ddd 1px solid;
   box-shadow: 0px 0px 7px 2px rgba(41, 41, 41, 0.25);
   background-color: rgba(41, 41, 41, 0.01);
- 
-  }
-  .logo {
-      display: block;
-      background-color: none;
-      margin: 10px;
-  
-/* почему то отсюда не притягивается высота, а притягивается только из html*/
-  }
+
+}
+
+.logo {
+  display: block;
+  margin: 10px;
+}
+
 .logo-image {
   height: 50px;
 
 }
+
 nav a {
-    color: #000000;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 20px;
-margin: auto 10px;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  margin: auto 10px;
 }
+
 .nav a:hover {
   background-color: #ddd;
-  color: black; 
+  color: black;
 }
-  h1 {
-text-align: center;
-  }
-  .first-card {
-    background-color: rgba(41, 41, 41, 0.01);
-    box-shadow: 0px 0px 7px 2px rgba(41, 41, 41, 0.25);
-    border: #ddd 1px solid;
-    padding: 20px 20px 20px 30px;
-    display: flex;
-   
+
+h1 {
+  text-align: center;
 }
+
+.first-card {
+  background-color: rgba(41, 41, 41, 0.01);
+  box-shadow: 0px 0px 7px 2px rgba(41, 41, 41, 0.25);
+  border: #ddd 1px solid;
+  padding: 20px 20px 20px 30px;
+  display: flex;
+
+}
+
 .info {
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-padding: 20px;
-align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: flex-start;
 }
-.icecream-image-container{
+
+.icecream-image-container {
   display: flex;
   align-items: center;
   width: 100%;
 }
+
 .icecream-image {
   width: 100%;
 }
 
 .icecream-logo {
-height: 100px;
-} /* и тут почему то притягивается только из html все правильно потому что я открыла не тот css файл и мучилась 3 часа*/
-button{
-border: #ddd 1px solid;
-padding: 5px;
-background-color: rgba(41, 41, 41, 0.05);
-font-size: 16px;
-width: 50%;
-height: 60px;
-margin-bottom: 0;
-align-self: center;
+  height: 100px;
 }
+
+.button-one {
+  border: #ddd 1px solid;
+  padding: 5px;
+  background-color: rgba(41, 41, 41, 0.05);
+  font-size: 16px;
+  width: 50%;
+  height: 60px;
+  margin-bottom: 0;
+  align-self: center;
+}
+
 button:hover {
-    background-color: #ddd;
+  background-color: #ddd;
 }
+
 .cards {
   margin-top: 30px;
   background-color: rgba(41, 41, 41, 0.01);
@@ -91,9 +102,8 @@ button:hover {
   justify-content: space-around;
   flex-wrap: wrap;
 }
-.card1,
-.card2,
-.card3 {
+
+.card {
   display: flex;
   flex-direction: column;
   margin: 50px auto;
@@ -103,16 +113,15 @@ button:hover {
   border: #ddd 1px solid;
   width: 250px;
 }
-.card1 p,
-.card2 p,
-.card3 p {
-margin-top: 5px;
+
+.card p{
+  margin-top: 5px;
 }
-.card1 h3,
-.card2 h3,
-.card3 h3 {
-margin-bottom: 0;
+
+.card-title {
+  margin-bottom: 0;
 }
+
 .form {
   max-width: 320px;
   padding: 15px;
@@ -125,16 +134,18 @@ margin-bottom: 0;
   align-items: center;
   text-align: center;
 }
+
 .form a {
-margin: 10px;
+  margin: 10px;
 }
+
 .input {
   display: block;
   width: 90%;
   padding: 8px 10px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .btn {
@@ -143,10 +154,36 @@ margin: 10px;
   padding: 8px 10px;
   border: 0;
   background-color: #ddd;
-  cursor: pointer; 
+  cursor: pointer;
   color: #000000;
 }
 
 .btn:hover {
   background-color: rgb(169, 169, 169);
 }
+.dropbtn {
+  margin: 0 10px;
+  padding: 25px;
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ddd;
+}
+.dropdown-content a {
+  padding: 10px;
+  align-self: center;
+  display: block;
+}
+.dropdown-content a:hover {background-color:rgba(186, 186, 186, 0.05);}
+
+.dropdown:hover .dropdown-content {display: flex;
+flex-direction: column;
+align-self: center;}
+
+.dropdown:hover .dropbtn {background-color: rgba(41, 41, 41, 0.05);}

@@ -7,15 +7,22 @@
   </head>
 
   <body>
-  <header class="header"> 
+  <header class="header">
 <div class="logo"> <img src="images/logo-1.png" class="logo-image" >
 </div>
   <nav>
-<a href="#recepies">Рецепты</a>
+<div class="dropdown">
+  <a class="dropbtn" href="#recepies">Рецепты</button>
+  <div class="dropdown-content">
+    <a href="#">Десерты</a>
+    <a href="#">Основное</a>
+    <a href="#">Напитки</a>
+  </div>
+</div>
 <a href="#photos">Фотографии</a>
 <a href="#blog">Блог</a>
 <a href="#video">Видео</a>
-<a href="vhod.html" id="login" name="login">Вход</a>
+<a href="login.html" id="login" name="login">Вход</a>
 </nav>
   </header>
 
@@ -25,7 +32,7 @@
     <img class="icecream-logo" src="images/logo-1.png">
      <h2 class="icecream-title">Тут рецепт мороженого с лимоном</h2>
      <p class="icecream-description">Один из самых вкусных вариантов домашнего мороженого: готовим лимонное! Насыщенный и сбалансированный кисло-сладкий вкус, нежная и гладкая текстура, тонкий аромат - сказка, а не десерт. </p>
-  <button name="button"> Приготовить
+  <button class="button-one" name="button"> Приготовить
   </button>
 </div>
     <div class="icecream-image-container">  <img class="icecream-image" src="images/icecream.png" >
@@ -33,19 +40,19 @@
    </div>
 
  <div class="cards">
-<div class="card1">
-<img src="images/card1.png"> 
-<h3 class="card1-title"> Какой-то рецепт</h3>
+<div class="card">
+<img src="images/card1.png">
+<h3 class="card-title"> Какой-то рецепт</h3>
 <p>Время:35мин</p>
  </div>
- <div class="card2">
-  <img src="images/card2.png"> 
-  <h3 class="card2-title"> Какой-то рецепт</h3>
+ <div class="card">
+  <img src="images/card2.png">
+  <h3 class="card-title"> Какой-то рецепт</h3>
   <p>Время:36мин</p>
    </div>
-   <div class="card3">
-    <img src="images/card3.png"> 
-    <h3 class="card3-title"> Какой-то рецепт</h3>
+   <div class="card">
+    <img src="images/card3.png">
+    <h3 class="card-title"> Какой-то рецепт</h3>
     <p>Время:37мин</p>
      </div>
 </div>
