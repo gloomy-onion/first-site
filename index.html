@@ -20,12 +20,25 @@
   </div>
 </div>
 <a href="#photos">Фотографии</a>
+<a href="#photos">Фотографии</a>
 <a href="#blog">Блог</a>
 <a href="#video">Видео</a>
-<a href="login.html" id="login" name="login">Вход</a>
+<a id="myBtn">Вход</button>
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <form class="form login" action="" method="post" id="login" #login>
+      <input class="input" type="email" placeholder="Ваш e-mail">
+      <input class="input" type="password" placeholder="Пароль">
+      <a href="register.html"> Еще не зарегестрированы? Регистрация</a>
+      <button class="btn" type="submit">Вход</button>
+      <a href="index.html">Назад</a>
+    </form>
+  </div>
+</div>
+</nav>
 </nav>
   </header>
-
     <h1>Привет, это мой первый сайт про лимоны!</h1>
    <div class="first-card">
      <div class="info">
@@ -53,11 +66,12 @@
    <div class="card">
     <img src="images/card3.png">
     <h3 class="card-title"> Какой-то рецепт</h3>
-    <p>Время:37мин</p>
-     </div>
+  <p>Время:37мин</p>
+   </div>
 </div>
 </div>
 
+    <script src="script.js"></script>
  </body>
  <footer>
 
