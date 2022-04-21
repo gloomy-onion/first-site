@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="css/styles.css">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>дубль 1</title>
   </head>
 
@@ -11,32 +12,33 @@
 <div class="logo"> <img src="images/logo-1.png" class="logo-image" >
 </div>
   <nav>
-<div class="dropdown">
+<div class="dropdown-header show"> 
+  <button onclick="myFunction()" class="dropbtn-header" ><img class="list" src="list.svg"></button>
+ <div id="myDropdown" class="dropdown-content-header" >
   <a class="dropbtn" href="#recepies">Рецепты</a>
   <div class="dropdown-content">
     <a href="#desserts">Десерты</a>
     <a href="#main">Основное</a>
     <a href="#drinks">Напитки</a>
-  </div>
 </div>
-<a href="#photos">Фотографии</a>
 <a href="#photos">Фотографии</a>
 <a href="#blog">Блог</a>
 <a href="#video">Видео</a>
 <a id="myBtn">Вход</button>
-<div id="myModal" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <form class="form login" action="" method="post" id="login" #login>
-      <input class="input" type="email" placeholder="Ваш e-mail">
-      <input class="input" type="password" placeholder="Пароль">
-      <a href="register.html"> Еще не зарегестрированы? Регистрация</a>
-      <button class="btn" type="submit">Вход</button>
-      <a href="index.html">Назад</a>
-    </form>
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <form class="form login" action="" method="post" id="login" #login>
+        <input class="input" type="email" placeholder="Ваш e-mail">
+        <input class="input" type="password" placeholder="Пароль">
+        <a href="register.html"> Еще не зарегестрированы? Регистрация</a>
+        <button class="btn" type="submit">Вход</button>
+        <a href="index.html">Назад</a>
+      </form>
+    </div>
+      </div>
   </div>
 </div>
-</nav>
 </nav>
   </header>
     <h1>Привет, это мой первый сайт про лимоны!</h1>
