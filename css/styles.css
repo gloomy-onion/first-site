@@ -21,41 +21,11 @@ header {
   display: block;
   margin: 10px;
 }
-@media screen and (max-width: 600px) {
-  .logo {
-    width: 20%;
-    height: 20%;
-  }
-}
-@media screen and (max-width: 600px) {
-  header {
-    width: 100%;
-  }
-}
+
 .logo-image {
   height: 50px;
 }
-@media screen and (max-width: 600px) {
-  .icecream-logo,
-  .icecream-image,
-  .icecream-image-container,
-  .icecream-description,
-  a {
-    display: none;
-  }
-}
 
-@media screen and (max-width: 600px) {
-  .dropdown {
-    display: none;
-  }
-}
-@media screen and (max-width: 600px) {
-  .first-card {
-    display: flex;
-    flex-direction: column;
-  }
-}
 nav a {
   color: #000000;
   text-align: center;
@@ -90,11 +60,6 @@ h1 {
   padding: 20px;
   align-items: flex-start;
 }
-@media screen and (max-width: 600px) {
-  .info {
-    text-align: center;
-  }
-}
 
 .icecream-image-container {
   display: flex;
@@ -124,6 +89,27 @@ h1 {
   .button-one {
     width: 60%;
     height: 30px;
+  }
+  .info {
+    text-align: center;
+  }
+  .first-card {
+    display: flex;
+    flex-direction: column;
+  }
+  .icecream-logo,
+  .icecream-image,
+  .icecream-image-container,
+  .icecream-description,
+  a {
+    display: none;
+  }
+  header {
+    width: 100%;
+  }
+  .logo {
+    width: 20%;
+    height: 20%;
   }
 }
 button:hover {
